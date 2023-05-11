@@ -53,3 +53,9 @@ var plugins: [Target] = [
 ]
 
 package.targets.append(contentsOf: plugins)
+
+// MARK: Products
+
+package.products = [
+    .plugin(name: "SwiftLintPlugin", targets: ["SwiftLintPlugin"]),
+]
